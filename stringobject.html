@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<htm>
+    <body>
+        <script>
+            function stringSelect(object){
+                for( const key in object){
+                    if(typeof object[key]==="string"){
+                        console.log(`${key}: ${object[key]}`)
+                    }
+                }
+            }
+            const result=stringSelect({name:'arezoo',family:'amiri',age:20,geneder:"f"})
+        </script>
+        
+    </body>
+</htm>
