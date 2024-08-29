@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<htm>
+<htm lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
     <body>
-        <script>
-            function stringSelect(object){
-                for( const key in object){
-                    if(typeof object[key]==="string"){
-                        console.log(`${key}: ${object[key]}`)
-                    }
-                }
-            }
-            const result=stringSelect({name:'arezoo',family:'amiri',age:20,geneder:"f"})
-        </script>
-        
+        <!-- <form id="dataForm">
+            <label for="fname">first name</label>
+            <input type="text" id="fname"/>
+            <label for="lname">last name</label>
+            <input type="text" id="lname"/>
+            <label for="age">age </label>
+            <input type="number" id="age"/>
+            <label for="fcolor">color</label>
+            <input type="color" id="fcolor"/>
+            <input type="submit"/>
+        </form> -->
+        <div id="jsonOutput"></div>
+        <h1> object-string-properties-ke</h1>
+        <p>write a function which checks and prints only the string type properties of an object</object></p>
+        <p></p>
+        <script src="objectstring.js"></script>
     </body>
 </htm>
