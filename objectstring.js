@@ -20,11 +20,17 @@
 
 
 function stringSelect(object){
-   
+    const objresult={};
     for( const key in object){
         if(typeof object[key]==="string"){
-            console.log( `${key}: ${object[key]}`) ;
+            objresult[key]=object[key];
+            
         }
+
     }
+    return objresult;
 }
-let result=stringSelect({name:'arezoo',family:'amiri',age:20,geneder:"f"})
+var  result=stringSelect({name:'arezoo',family:'amiri',age:20,geneder:"f",singel:false})
+
+var  resultElement=document.getElementById("show")
+resultElement.innerHTML=JSON.stringify(result)
